@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+ box-sizing: border-box;
+ color: #00B5A9;
+ 
+}
+
+#root{
+  min-height: 100vh;
+
+}
+
+/* menu */
+.menu-items{
+  display: inline-block;
+  margin: 18px;
+  font-size: 26px;
+}
+
+.active-style{
+  position: relative;
+}
+
+.active-style::after{
+  content: '';
+  position: absolute;
+  background-color: #00B5A9;
+  height: 4px;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+}
+
+/* home */
+.buttons {
+  width: 108px;
+  height: 46px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(84deg, #007C89 5.72%, #00B5A9 98.72%);
+  margin: 20px 20px 20px 20px;
+  color: white;
+  transition: all 0.6s;
+}
+
+.buttons:hover{
+  background: linear-gradient(84deg, #01727e 5.72%, #01aa9f 100%);
+}
+
+.skillset div{
+  margin-bottom: 30px;
+}
+.skillset img{
+  height: 64px;
+}
+
+.skillset p{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.contform input,.contform textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 15px;
+  margin: 15px 0;
+  caret-color: #00B5A9;
+  color: #017D8A;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px #00B5A9;
+}
+
+.socialicons{
+  width: 30px;
+  height: 30px;
+}
+/* footer */
+
+footer{
+  background: url('./assets/images/Wave.svg');
+  background-size: cover;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+}
